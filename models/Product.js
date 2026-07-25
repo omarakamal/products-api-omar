@@ -13,7 +13,7 @@ const productShcema = new Schema({
     category:{
         type: String,
         required: true,
-        enum:  ["electronics", "food", "clothing", "furniture", "other"],
+        // enum:  ["electronics", "food", "clothing", "furniture", "other"],
     },
     price: {
         type: Number,
