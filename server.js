@@ -62,6 +62,11 @@ app.get('/',(req,res)=>{
     res.render('home.ejs')
 })
 
+
+app.get('/bonus',(req,res)=>{
+    res.render('bonus.ejs')
+})
+
 app.use('/products',studentRoutes)
 
 

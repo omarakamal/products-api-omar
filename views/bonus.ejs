@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Lab API</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .App {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+  }
+   
+
+
+
+  table,tr, th, td {
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="App">
+        <h1>Products Lab API Documentation</h1>
+        <br>
+        <br>
+        <h2> <a href="/products">Link to All Products</a></h2>
+        <br>
+        <p><b>Base Url: </b>https://products-api-164h.onrender.com/</p>
+
+        <h2>Endpoints:</h2>
+        <table>
+            <tr>
+                <th>Endpoints</th>
+                <th>HTTP Method</th>
+                <th>Response Data Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>/products</td>
+                <td>GET</td>
+                <td>[]</td>
+                <td>This endpoint returns an array of all the products stored within the API</td>
+            </tr>
+            <tr>
+                <td>/products/:id</td>
+                <td>GET</td>
+                <td>{}</td>
+                <td>This endpoint returns Object representing only 1 product</td>
+            </tr>
+            <tr>
+                <td>/products</td>
+                <td>POST</td>
+                <td>{}</td>
+                <td>This endpoint is used to create a new product. It will return an object representing the new product that was created</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
